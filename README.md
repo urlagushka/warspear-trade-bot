@@ -11,32 +11,40 @@ Put your tesseract path to main.py
 Template for config.json in config directory:
 ```json
 {
-  "windows": [
-    "Warspear Online"
-  ],
-  "messages": [
-    ["msg1", 8],
-    ["msg2", 10],
-    ["msg3", 5]
-  ],
-  "trade": {
-    "current_amount": 200,
-    "price": 20,
-    "mask": "item_mask",
-    "delay": 0.001
-  },
-  "click": {
-    "delay": 0.1,
-    "step": 100,
-    "hold": {
-      "0": 0,
-      "100": 4.36,
-      "200": 6.13,
-      "300": 7.35,
-      "400": 8.49
+  "windows": {
+    "Warspear Online": {
+      "name": "Warspear Online",
+      "messages": [
+        ["msg1", 1],
+        ["msg2", 10],
+        ["msg3", 5]
+      ],
+      "trade": {
+        "current_amount": 200,
+        "price": 20,
+        "mask": "item_mask",
+        "delay": 0.001
+      },
+      "click": {
+        "delay": 0.1,
+        "step": 100,
+        "hold": {
+          "0": 0,
+          "100": 4.36,
+          "200": 6.13,
+          "300": 7.35,
+          "400": 8.49,
+          "500": 10.12,
+          "600": 11.26,
+          "700": 12.48,
+          "800": 14.10,
+          "900": 15.25,
+          "1000": 16.47
+        }
+      }
     }
   },
-  "timeout": 60
+  "timeout": 60000
 }
 ```
 
